@@ -3,8 +3,8 @@
 //
 // Reference: http://jscs.info/rules
 {
-    // Load project rules and shared Body Labs rules.
-    "additionalRules": ["jscs/rules/*.js", "node_modules/bodylabs-jscs/rules/*.js"],
+    // Load shared Body Labs rules.
+    "additionalRules": ["rules/*.js"],
 
     // Enable support for JSX.
     "esnext": true,
