@@ -24,7 +24,6 @@
     // Line comments start with a space <-- like this one does.
     "requireSpaceAfterLineComment": true,
 
-
     // var compositeThing = new CompositeThing();
     // var params = { thisIsPreferred: true };
     // var params = { this_is_okay: true };
