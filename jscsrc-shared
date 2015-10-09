@@ -1,0 +1,164 @@
+// Body Labs JavaScript style. Derived from Crockford style, with a bunch of
+// tweaks.
+//
+// Reference: http://jscs.info/rules
+{
+    // Load project rules and shared Body Labs rules.
+    "additionalRules": ["jscs/rules/*.js", "node_modules/bodylabs-jscs/rules/*.js"],
+
+    // Enable support for JSX.
+    "esnext": true,
+
+    // In some projects, we generate .js using Handlebars. Don't lint those
+    // files.
+    "excludeFiles": ["**/*.tpl.js"],
+
+    // Four-space indent.
+    "validateIndentation": 4,
+    "disallowMixedSpacesAndTabs": true,
+    "disallowTrailingWhitespace": true,
+
+    // Newline at end of file.
+    "requireLineFeedAtFileEnd": true,
+
+    // Line comments start with a space <-- like this one does.
+    "requireSpaceAfterLineComment": true,
+
+
+    // var compositeThing = new CompositeThing();
+    // var params = { thisIsPreferred: true };
+    // var params = { this_is_okay: true };
+    "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+    "requireCapitalizedConstructors": true,
+
+    // if (cond) {
+    //     stuff();
+    // } else {
+    //     otherStuff();
+    // }
+    // for (var i = 0; i < target; ++i) {
+    //     stuff();
+    // };
+    // var foo = function (arg1, arg2) {
+    //     stuff(arg1);
+    // };
+    // function factorial (value) {
+    //     return value == 0 ? 1 : value * factorial(value - 1);
+    // };
+    "requireSpaceAfterKeywords": [
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "switch",
+        "case",
+        "return",
+        "try",
+        "catch",
+        "function",
+        "typeof"
+    ],
+    "requireSpaceBeforeKeywords": [
+        "else",
+        "catch"
+    ],
+    "requireSpaceBeforeBlockStatements": true,
+    "disallowKeywordsOnNewLine": ["else"],
+    "requireCurlyBraces": [
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "try",
+        "catch"
+    ],
+    "requireSpacesInForStatement": true,
+    "requireSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    "disallowSpacesInFunctionDeclaration": {
+        "beforeOpeningRoundBrace": true
+    },
+    "requireSpaceBetweenArguments": true,
+    "disallowNamedUnassignedFunctions": true,
+    "disallowSpacesInNamedFunctionExpression": {
+        "beforeOpeningRoundBrace": true
+    },
+
+    // var foo = [
+    //     'one',
+    //     'two',
+    //     'three',
+    // ];
+    // var foo = ['one', 'two', 'three'];
+    // var bar = {
+    //     one: 1,
+    //     two: 2,
+    //     three: 3,
+    // };
+    // var bar = { one: 1, two: 2, three: 3 };
+    // var baz = { bazinga: {
+    //    one: 1,
+    //    two: 2,
+    // } };
+    // foo.bar = 123;
+    "requireCommaBeforeLineBreak": true,
+    "bodylabsRequireTrailingComma": {
+        "ignoreSingleValue": "withClosingBracesOnSameLine",
+        "ignoreSingleLine": true
+    },
+    "disallowSpacesInsideArrayBrackets": true,
+    "requireSpacesInsideObjectBrackets": "all",
+    "requireSpaceBeforeObjectValues": true,
+    "disallowSpaceAfterObjectKeys": true,
+    "disallowQuotedKeysInObjects": true,
+    "requireDotNotation": true,
+
+    // var filter = function (item) { return item.count > 1; }
+    // if (foo) {
+    //     something();
+    // } else {
+    //     somethingElse();
+    // }
+
+    // TODO This isn't checked. We don't want requireBlocksOnNewline for
+    // functions, but we want it everywhere else.
+    //"requireBlocksOnNewline": true,
+
+    // 5 * (1 + 2)
+    // ! obj.isValid()
+    // ++count
+    // count++
+    // offset(-width, -height)
+    // +bar
+    // cond ? first : second
+    "disallowSpacesInsideParentheses": true,
+    "requireSpaceAfterPrefixUnaryOperators": ["!"],
+    "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "+", "-", "~"],
+    "disallowSpaceBeforePostfixUnaryOperators": true,
+    "requireSpaceBeforeBinaryOperators": true,
+    "requireSpaceAfterBinaryOperators": true,
+    "disallowSpaceBeforeBinaryOperators": [","],
+    "requireSpacesInConditionalExpression": true,
+
+    // Automatic semicolon insertion is pretty bad.
+    "requireSemicolons": true,
+
+    // Crockford, seems sensible.
+    "disallowEmptyBlocks": true,
+
+    // Crockford, seems sensible.
+    "requireParenthesesAroundIIFE": true,
+
+    // Crockford, seems sensible.
+    "disallowKeywords": ["with"],
+
+    // var x = 'this is a' +
+    //     'multi-line string';
+    // From Crockford.
+    "disallowMultipleLineStrings": true
+
+}

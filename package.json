@@ -1,0 +1,12 @@
+{
+  "name": "bodylabs-jscs",
+  "version": "1.0.0",
+  "description": "Body Labs JavaScript style",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bodylabs/bodylabs-jscs.git"
+  },
+  "author": "Body Labs",
+  "license": "MIT",
+  "homepage": "https://github.com/bodylabs/bodylabs-jscs"
+}
