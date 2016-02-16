@@ -11,7 +11,7 @@
 
     // In some projects, we generate .js using Handlebars. Don't lint those
     // files.
-    "excludeFiles": ["**/*.tpl.js"],
+    "excludeFiles": ["**/*.tpl.js", "node_modules"],
 
     // Four-space indent.
     "validateIndentation": 4,
