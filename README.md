@@ -1,7 +1,7 @@
-bodylabs-jscs
+bodylabs-javascript-style
 =============
 
-Body Labs JavaScript style, using JSCS.
+Body Labs JavaScript style, using JSCS, eslint.
 
 
 Versioning
@@ -9,7 +9,7 @@ Versioning
 
 This repository adopts the versioning strategy of JSCS:
 
-We recommend installing JSCS via NPM using `^`, or `~` if you want more stable releases.
+We recommend installing JSCS and eslint via NPM using `^`, or `~` if you want more stable releases.
 
 Semver (http://semver.org/) dictates that breaking changes be major version bumps. In the context of a linting tool, a bug fix that causes more errors to be reported can be interpreted as a breaking change. However, that would require major version bumps to occur more often than can be desirable. Therefore, as a compromise, we will only release bug fixes that cause more errors to be reported in minor versions.
 
