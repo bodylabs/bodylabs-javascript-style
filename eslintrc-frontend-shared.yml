@@ -20,7 +20,7 @@ globals:
     __dev_tools: true
 
 extends:
-    "./shared-eslintrc.yml"
+    "./eslintrc-shared.yml"
 
 rules:
     # 2 means error, 1 means warning, 0 means ignore.
