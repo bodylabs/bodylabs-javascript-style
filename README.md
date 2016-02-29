@@ -1,7 +1,7 @@
 bodylabs-javascript-style
 =============
 
-Body Labs JavaScript style, using JSCS, eslint.
+Body Labs JavaScript style, using JSCS and eslint.
 
 
 Versioning
