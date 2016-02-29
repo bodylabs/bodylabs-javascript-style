@@ -1,0 +1,47 @@
+# Don't inherit settings from e.g. ~.
+root: true
+
+env:
+    node: true
+    mocha: true
+
+parserOptions:
+    # Allow ES6.
+    ecmaVersion: 6
+
+extends:
+    "eslint:recommended"
+
+rules:
+    # 2 means error, 1 means warning, 0 means ignore.
+
+    # Avoid type coercion.
+    eqeqeq: 2
+
+    # Style.
+    dot-location: [2, "property"]
+
+    # Avoid missing `new` keyword.
+    new-cap: 2
+
+    # Node.js
+    handle-callback-err: 2
+    no-new-require: 2
+
+    # ES6.
+    prefer-const: 1
+    require-yield: 2
+
+    # Disable a couple of the recommended checks:
+
+    # Allow unused parameters. In callbacks, removing them seems to obscure
+    # what the functions are doing.
+    no-unused-vars: [2, {"args": "none"}]
+
+    # Covered by jscs; don't check it again here.
+    comma-dangle: 0
+
+    # Well, we should start using loggers more consistently so we can turn
+    # this on.
+    no-console: 0
+
