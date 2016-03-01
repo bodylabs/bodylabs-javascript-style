@@ -26,6 +26,8 @@ rules:
     # 2 means error, 1 means warning, 0 means ignore.
 
     # JSX.
+    # eslint-plugin-react is required
+    # https://github.com/yannickcr/eslint-plugin-react
     jsx-quotes: 2
 
     # Prevent spurious warnings in JSX code.
