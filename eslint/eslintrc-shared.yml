@@ -32,6 +32,9 @@ rules:
     prefer-const: 1
     require-yield: 2
 
+    # ES6 arrow functions.
+    arrow-spacing: 2
+
     # Disable a couple of the recommended checks:
 
     # Allow unused parameters. In callbacks, removing them seems to obscure
@@ -44,4 +47,3 @@ rules:
     # Well, we should start using loggers more consistently so we can turn
     # this on.
     no-console: 0
-
