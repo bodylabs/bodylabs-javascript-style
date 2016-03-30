@@ -35,7 +35,15 @@ rules:
     # ES6 arrow functions.
     arrow-spacing: 2
     no-confusing-arrow: [2, {"allowParens": true}]
-    bodylabs-arrow-body-style: [2, "multi-line"]
+
+    # var foo = (thing) => bar({ foo: thing, baz: 'inga'});
+    # var foo = (thing) => {
+    #    bar({
+    #        foo: thing,
+    #        baz: 'inga',
+    #    });
+    # };
+    bodylabs-arrow-body-style: [2, "when-multi-line"]
 
     # Disable a couple of the recommended checks:
 
