@@ -1,3 +1,6 @@
+// Modified from
+// https://github.com/eslint/eslint/blob/a35f1274cc553789e7a83d8cf501c82be7b6b342/lib/rules/arrow-body-style.js
+
 /**
  * @fileoverview Rule to require braces in arrow function body.
  * @author Alberto Rodríguez
