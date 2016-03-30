@@ -72,6 +72,14 @@ ruleTester.run("arrow-body-style", rule, {
             ]
         },
         {
+            code: "var foo = () => \n bar({\nbaz: 'inga'\n});",
+            parserOptions: { ecmaVersion: 6 },
+            options: ["when-multi-line"],
+            errors: [
+                { line: 1, column: 11, type: "ArrowFunctionExpression", message: "Expected block statement surrounding multi-line arrow function." }
+            ]
+        },
+        {
             code: "var foo = () => \n bar();",
             parserOptions: { ecmaVersion: 6 },
             options: ["when-multi-line"],
