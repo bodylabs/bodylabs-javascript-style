@@ -112,7 +112,7 @@
     "disallowSpacesInsideArrayBrackets": true,
     "requireSpacesInsideObjectBrackets": "all",
     "requireSpaceBeforeObjectValues": true,
-    "disallowSpaceAfterObjectKeys": true,
+    "disallowSpaceAfterObjectKeys": { "allExcept": ["method"] },
     "disallowQuotedKeysInObjects": true,
     "requireDotNotation": true,
 
