@@ -24,6 +24,9 @@ rules:
     # Avoid missing `new` keyword.
     new-cap: 2
 
+    # No more thing.should.be.ok without calling it
+    no-unused-expressions: 2
+
     # Node.js
     handle-callback-err: 2
     no-new-require: 2
