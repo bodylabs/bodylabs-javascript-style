@@ -52,7 +52,9 @@ rules:
     space-before-blocks: ["error", "always"]
     curly: "error"
     semi-spacing: "error"
-    func-style: ["error", "expression"]
+    # This is mentioned in the style guide, but was not enforced by the old
+    # linter.
+    # func-style: ["error", "expression"]
     space-before-function-paren: ["error", { "anonymous": "always", "named": "ignore" }]
     comma-spacing: "error"
     func-names: ["error", "never"]
