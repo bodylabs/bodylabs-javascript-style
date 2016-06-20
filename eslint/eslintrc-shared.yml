@@ -16,8 +16,6 @@ extends:
     "eslint:recommended"
 
 rules:
-    # 2 means error, 1 means warning, 0 means ignore.
-
     # Four-space indent.
     # Note: Some problems with const.
     # indent: ["error", 4]
