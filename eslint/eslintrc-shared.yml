@@ -55,7 +55,7 @@ rules:
     space-before-blocks: ["error", "always"]
     curly: "error"
     semi-spacing: "error"
-    func-style: "error"
+    func-style: ["error", "expression"]
     space-before-function-paren: ["error", { "anonymous": "always", "named": "always" }]
     comma-spacing: "error"
     func-names: ["error", "never"]
@@ -78,8 +78,8 @@ rules:
     # } };
     # foo.bar = 123;
     comma-style: ["error"]
-    operator-linebreak: ["error", "after"]
     comma-dangle: ["error", "always-multiline"]
+    operator-linebreak: ["error", "after"]
     array-bracket-spacing: ["error", "never"]
     object-curly-spacing: ["error", "always"]
     key-spacing: "error"
