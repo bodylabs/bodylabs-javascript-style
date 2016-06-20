@@ -53,7 +53,7 @@ rules:
     curly: "error"
     semi-spacing: "error"
     func-style: ["error", "expression"]
-    space-before-function-paren: ["error", { "anonymous": "always", "named": "always" }]
+    space-before-function-paren: ["error", { "anonymous": "always", "named": "ignore" }]
     comma-spacing: "error"
     func-names: ["error", "never"]
 
