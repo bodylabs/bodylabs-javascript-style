@@ -8,5 +8,8 @@
   },
   "author": "Body Labs",
   "license": "MIT",
-  "homepage": "https://github.com/bodylabs/bodylabs-javascript-style"
+  "homepage": "https://github.com/bodylabs/bodylabs-javascript-style",
+  "peerDependencies": {
+    "eslint": ">=2.13.0"
+  }
 }

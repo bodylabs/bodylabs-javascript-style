@@ -1,3 +1,6 @@
+# Body Labs JavaScript style. Derived from Crockford style, with a bunch of
+# tweaks.
+
 # Don't inherit settings from e.g. ~.
 root: true
 
@@ -15,38 +18,136 @@ extends:
 rules:
     # 2 means error, 1 means warning, 0 means ignore.
 
+    # Four-space indent.
+    # Note: Some problems with const.
+    # indent: ["error", 4]
+    no-mixed-spaces-and-tabs: "error"
+    no-trailing-spaces: "error"
+
+    # Newlint at end of file.
+    eol-last: "error"
+
+    # Line comments start with a space <-- like this one does.
+    spaced-comment: "error"
+
+    # var compositeThing = new CompositeThing();
+    # var params = { thisIsPreferred: true };
+    # var params = { this_is_okay: true };
+    camelcase: ["error", { "properties": "never" }]
+    new-cap: "error"
+
+    # if (cond) {
+    #     stuff();
+    # } else {
+    #     otherStuff();
+    # }
+    # for (var i = 0; i < target; ++i) {
+    #     stuff();
+    # };
+    # var foo = function (arg1, arg2) {
+    #     stuff(arg1);
+    # };
+    # function factorial (value) {
+    #     return value == 0 ? 1 : value * factorial(value - 1);
+    # };
+    keyword-spacing: ["error", { "before": true, "after": true }]
+    brace-style: ["error", "1tbs", { "allowSingleLine": true }]
+    space-before-blocks: ["error", "always"]
+    curly: "error"
+    semi-spacing: "error"
+    func-style: "error"
+    space-before-function-paren: ["error", { "anonymous": "always", "named": "always" }]
+    comma-spacing: "error"
+    func-names: ["error", "never"]
+
+    # var foo = [
+    #     'one',
+    #     'two',
+    #     'three',
+    # ];
+    # var foo = ['one', 'two', 'three'];
+    # var bar = {
+    #     one: 1,
+    #     two: 2,
+    #     three: 3,
+    # };
+    # var bar = { one: 1, two: 2, three: 3 };
+    # var baz = { bazinga: {
+    #    one: 1,
+    #    two: 2,
+    # } };
+    # foo.bar = 123;
+    comma-style: ["error"]
+    operator-linebreak: ["error", "after"]
+    comma-dangle: ["error", "always-multiline"]
+    array-bracket-spacing: ["error", "never"]
+    object-curly-spacing: ["error", "always"]
+    key-spacing: "error"
+    quote-props: ["error", "as-needed"]
+    dot-notation: "error"
+
+    # var filter = function (item) { return item.count > 1; }
+    # if (foo) {
+    #     something();
+    # } else {
+    #     somethingElse();
+    # }
+    block-spacing: ["error", "always"]
+
+    # 5 * (1 + 2)
+    # ! obj.isValid()
+    # ++count
+    # count++
+    # offset(-width, -height)
+    # +bar
+    # cond ? first : second
+    space-in-parens: "error"
+    space-unary-ops: ["error", { "words": true, "nonwords": false, "overrides": { "!": true } }]
+    space-infix-ops: "error"
+
+    # Automatic semicolon insertion is pretty bad.
+    semi: "error"
+
+    # Crockford, seems sensible.
+    no-empty: "error"
+
+    # Crockford, seems sensible.
+    wrap-iife: ["error", "any"]
+
+    # Crockford, seems sensible.
+    no-with: "error"
+
+    # var x = 'this is a' +
+    #     'multi-line string';
+    # From Crockford.
+    no-multi-str: "error"
+
     # Avoid type coercion.
-    eqeqeq: 2
+    eqeqeq: "error"
 
     # Style.
-    dot-location: [2, "property"]
-
-    # Avoid missing `new` keyword.
-    new-cap: 2
+    dot-location: ["error", "property"]
 
     # No more thing.should.be.ok without calling it
-    no-unused-expressions: 2
+    no-unused-expressions: "error"
 
     # Node.js
-    handle-callback-err: 2
-    no-new-require: 2
+    handle-callback-err: "error"
+    no-new-require: "error"
 
     # ES6.
-    prefer-const: 1
-    require-yield: 2
+    prefer-const: "warn"
+    require-yield: "error"
 
     # ES6 arrow functions.
-    arrow-spacing: 2
+    arrow-spacing: "error"
 
     # Disable a couple of the recommended checks:
 
     # Allow unused parameters. In callbacks, removing them seems to obscure
     # what the functions are doing.
-    no-unused-vars: [2, {"args": "none"}]
-
-    # Covered by jscs; don't check it again here.
-    comma-dangle: 0
+    no-unused-vars: ["error", {"args": "none"}]
 
     # Well, we should start using loggers more consistently so we can turn
     # this on.
-    no-console: 0
+    no-console: "off"
