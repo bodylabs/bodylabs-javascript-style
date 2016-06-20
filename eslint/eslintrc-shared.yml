@@ -17,8 +17,7 @@ extends:
 
 rules:
     # Four-space indent.
-    # Note: Some problems with const.
-    # indent: ["error", 4]
+    indent: ["error", 4]
     no-mixed-spaces-and-tabs: "error"
     no-trailing-spaces: "error"
 

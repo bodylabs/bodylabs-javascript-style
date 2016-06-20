@@ -3,6 +3,4 @@
 //
 // Reference: http://jscs.info/rules
 {
-    // Four-space indent.
-    "validateIndentation": 4
 }
