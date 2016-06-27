@@ -15,9 +15,19 @@ Usage
 npm install --save-dev eslint eslint-plugin-bodylabs
 ```
 
+In your project, create `.eslintrc.yml`:
+
 ```yml
 extends:
     "plugin:bodylabs/common"
+```
+
+```json
+  "scripts": {
+    "lint": "eslint src",
+    "unittest": "mocha src",
+    "test": "npm run lint && npm run unittest"
+  }
 ```
 
 
