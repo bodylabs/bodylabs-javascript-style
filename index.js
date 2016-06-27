@@ -5,6 +5,13 @@ const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 
-const eslintrcPath = path.resolve(__dirname, 'eslint', 'eslintrc-shared.yml');
+const loadConfig = (name) => {
+    const configPath = path.resolve(__dirname, 'eslint', `${ name }.yml`);
+    return yaml.load(fs.readFileSync(configPath, 'utf8'));
+};
 
-module.exports = yaml.load(fs.readFileSync(eslintrcPath, 'utf8'));
+module.exports = {
+    configs: {
+        common: loadConfig('common'),
+    },
+};

@@ -3,6 +3,9 @@ bodylabs-javascript-style
 
 Body Labs JavaScript style, using eslint.
 
+This is provided as an eslint module, because it enables bundling together
+multiple configs, and also allows us to provide code for our own rules.
+
 
 Versioning
 ----------
