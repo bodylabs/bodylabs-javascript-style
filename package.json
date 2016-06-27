@@ -4,11 +4,11 @@
   "description": "Body Labs JavaScript style",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bodylabs/bodylabs-javascript-style.git"
+    "url": "https://github.com/bodylabs/eslint-plugin-bodylabs.git"
   },
   "author": "Body Labs",
   "license": "MIT",
-  "homepage": "https://github.com/bodylabs/bodylabs-javascript-style",
+  "homepage": "https://github.com/bodylabs/eslint-plugin-bodylabs",
   "peerDependencies": {
     "eslint": ">=2.13.0"
   },
