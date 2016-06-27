@@ -1,6 +1,6 @@
 {
-  "name": "bodylabs-javascript-style",
-  "version": "6.0.0",
+  "name": "eslint-config-bodylabs",
+  "version": "6.1.0",
   "description": "Body Labs JavaScript style",
   "repository": {
     "type": "git",
@@ -11,5 +11,8 @@
   "homepage": "https://github.com/bodylabs/bodylabs-javascript-style",
   "peerDependencies": {
     "eslint": ">=2.13.0"
+  },
+  "dependencies": {
+    "js-yaml": "^3.6.1"
   }
 }
