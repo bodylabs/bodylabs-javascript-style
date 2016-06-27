@@ -13,6 +13,6 @@
     "eslint": ">=2.13.0"
   },
   "dependencies": {
-    "js-yaml": ">3"
+    "js-yaml": ">=3"
   }
 }
