@@ -1,11 +1,24 @@
-bodylabs-javascript-style
-=========================
+eslint-plugin-bodylabs
+======================
 
 Body Labs JavaScript style, using eslint.
 
 This is provided as an eslint module, because it lets us bundle together
 multiple configs, and also allows us to provide code for our own rules,
 should we add any in the future.
+
+
+Usage
+-----
+
+```sh
+npm install --save-dev eslint eslint-plugin-bodylabs
+```
+
+```yml
+extends:
+    "plugin:bodylabs/common"
+```
 
 
 Versioning
