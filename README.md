@@ -23,11 +23,11 @@ extends:
 ```
 
 ```json
-  "scripts": {
-    "lint": "eslint src",
-    "unittest": "mocha src",
-    "test": "npm run lint && npm run unittest"
-  }
+"scripts": {
+  "lint": "eslint src",
+  "unittest": "mocha src",
+  "test": "npm run lint && npm run unittest"
+}
 ```
 
 
