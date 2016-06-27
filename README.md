@@ -22,6 +22,8 @@ extends:
     "plugin:bodylabs/common"
 ```
 
+And then set up scripts:
+
 ```json
 "scripts": {
   "lint": "eslint src",
