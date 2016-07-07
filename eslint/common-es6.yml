@@ -4,17 +4,13 @@ extends:
 rules:
     strict: ["error", "global"]
 
-    # const is better than let; both are better than var
     no-var: "error"
-    prefer-const: "warn"
+    no-const-assign: "error"
 
     # No parens single-arg arrow functions:
     # () => {};
     # a => a; // instead of (a) => a
     # (a, b, c) => a;
     arrow-parens: ["error", "as-needed"]
-    arrow-spacing: "error"
     # Don't write `a => 1 ? 2 : 3` (could be confused with `a <= 1 ? 2 : 3;`)
     no-confusing-arrow: "error"
-
-    require-yield: "error"
