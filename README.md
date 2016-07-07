@@ -22,6 +22,13 @@ extends:
     "plugin:bodylabs/common"
 ```
 
+Or for ES6:
+
+```yml
+extends:
+    "plugin:bodylabs/common-es6"
+```
+
 And then set up scripts:
 
 ```json
