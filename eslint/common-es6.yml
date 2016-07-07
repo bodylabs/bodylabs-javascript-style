@@ -1,5 +1,5 @@
 extends:
-    "./common"
+    "./common.yml"
 
 rules:
     no-var: "error"
