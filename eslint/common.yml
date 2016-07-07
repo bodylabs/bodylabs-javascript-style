@@ -131,13 +131,6 @@ rules:
     handle-callback-err: "error"
     no-new-require: "error"
 
-    # ES6.
-    prefer-const: "warn"
-    require-yield: "error"
-
-    # ES6 arrow functions.
-    arrow-spacing: "error"
-
     # Disable a couple of the recommended checks:
 
     # Allow unused parameters. In callbacks, removing them seems to obscure

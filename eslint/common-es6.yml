@@ -1,0 +1,8 @@
+extends:
+    "./common"
+
+rules:
+    no-var: "error"
+    prefer-const: "warn"
+    require-yield: "error"
+    arrow-spacing: "error"
