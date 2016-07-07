@@ -6,3 +6,5 @@ rules:
     prefer-const: "warn"
     require-yield: "error"
     arrow-spacing: "error"
+    no-confusing-arrow: "error"
+    strict: ["error", "global"]
