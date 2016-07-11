@@ -9,6 +9,9 @@ parserOptions:
     # Allow ES6.
     ecmaVersion: 6
 
+globals:
+    Promise: true
+
 extends:
     "eslint:recommended"
 
