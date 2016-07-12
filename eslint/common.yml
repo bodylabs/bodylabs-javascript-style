@@ -5,6 +5,9 @@ env:
     node: true
     mocha: true
 
+plugins:
+    - 'mocha'
+
 parserOptions:
     # Allow ES6.
     ecmaVersion: 6
@@ -150,3 +153,8 @@ rules:
     # Well, we should start using loggers more consistently so we can turn
     # this on.
     no-console: "off"
+
+    # Mocha.
+    "mocha/handle-done-callback": "error"
+    "mocha/no-global-tests": "error"
+    "mocha/no-mocha-global-arrows": "error"
