@@ -150,3 +150,6 @@ rules:
     # Well, we should start using loggers more consistently so we can turn
     # this on.
     no-console: "off"
+
+    # Consistency.
+    quotes: ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }]
