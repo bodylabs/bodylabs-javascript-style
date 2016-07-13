@@ -144,6 +144,10 @@ rules:
     # ES6 arrow functions.
     arrow-spacing: "error"
 
+    # ES6 object literals.
+    no-useless-constructor: "error"
+    no-useless-rename: "error"
+
     # Disable a couple of the recommended checks:
 
     # Allow unused parameters. In callbacks, removing them seems to obscure
