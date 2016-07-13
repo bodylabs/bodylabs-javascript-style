@@ -47,6 +47,7 @@ rules:
     # var foo = function (arg1, arg2) {
     #     stuff(arg1);
     # };
+    # Unfortunately, this requires an override:
     # function factorial (value) {
     #     return value == 0 ? 1 : value * factorial(value - 1);
     # };
@@ -55,9 +56,7 @@ rules:
     space-before-blocks: ["error", "always"]
     curly: "error"
     semi-spacing: "error"
-    # This is mentioned in the style guide, but was not enforced by the old
-    # linter.
-    # func-style: ["error", "expression"]
+    func-style: ["error", "expression"]
     space-before-function-paren: ["error", { "anonymous": "always", "named": "ignore" }]
     comma-spacing: "error"
     func-names: ["error", "never"]
@@ -109,6 +108,9 @@ rules:
 
     # Automatic semicolon insertion is pretty bad.
     semi: "error"
+
+    # Creating a function in a loop is a big gotcha.
+    no-loop-func: "error"
 
     # Crockford, seems sensible.
     no-empty: "error"
