@@ -19,6 +19,9 @@ extends:
     "eslint:recommended"
 
 rules:
+    # Strict mode.
+    strict: ["error", "global"]
+
     # Four-space indent.
     indent: ["error", 4, { "SwitchCase": 1 }]
     no-mixed-spaces-and-tabs: "error"

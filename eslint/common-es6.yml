@@ -2,8 +2,6 @@ extends:
     "./eslint/common.yml"
 
 rules:
-    strict: ["error", "global"]
-
     no-var: "error"
     no-const-assign: "error"
 
