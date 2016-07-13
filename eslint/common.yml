@@ -110,6 +110,9 @@ rules:
     # Automatic semicolon insertion is pretty bad.
     semi: "error"
 
+    # Creating a function in a loop is a big gotcha.
+    no-loop-func: "error"
+
     # Crockford, seems sensible.
     no-empty: "error"
 
