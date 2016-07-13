@@ -140,13 +140,11 @@ rules:
     # ES6.
     prefer-const: "warn"
     require-yield: "error"
+    no-useless-constructor: "error"
+    no-useless-rename: "error"
 
     # ES6 arrow functions.
     arrow-spacing: "error"
-
-    # ES6 object literals.
-    no-useless-constructor: "error"
-    no-useless-rename: "error"
 
     # Disable a couple of the recommended checks:
 
