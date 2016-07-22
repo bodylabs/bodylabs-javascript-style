@@ -156,7 +156,12 @@ rules:
     # (a, b, c) => a;
     arrow-parens: ["error", "as-needed"]
 
-    # ES6 arrow functions.
+    # No usless return keyword for one-line arrow functions
+    # Write i => i + 1 instead of i => { return i + 1 }, and for objects too,
+    # write i => ({ foo: i }) instead of i => { return { foo: i }; }
+    arrow-body-style: ["error", "as-needed"]
+
+    # Spaces before and after arrow, e.g. a => a
     arrow-spacing: "error"
 
     # Don't write `a => 1 ? 2 : 3` (could be confused with `a <= 1 ? 2 : 3;`)
