@@ -164,9 +164,6 @@ rules:
     # Spaces before and after arrow, e.g. a => a
     arrow-spacing: "error"
 
-    # Don't write `a => 1 ? 2 : 3` (could be confused with `a <= 1 ? 2 : 3;`)
-    no-confusing-arrow: "error"
-
     # Disable a couple of the recommended checks:
 
     # Allow unused parameters. In callbacks, removing them seems to obscure
