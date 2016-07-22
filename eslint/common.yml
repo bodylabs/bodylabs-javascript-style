@@ -27,7 +27,11 @@ rules:
     no-mixed-spaces-and-tabs: "error"
     no-trailing-spaces: "error"
 
-    # Newlint at end of file.
+    # Enforce reasonable line lengths and short comments.
+    # Note that trailing comments are treated as code.
+    max-len: ["error", { "code": 120, "comments": 80, "ignoreUrls": true }]
+
+    # Newline at end of file.
     eol-last: "error"
 
     # Line comments start with a space <-- like this one does.
