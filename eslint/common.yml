@@ -28,7 +28,7 @@ rules:
     no-trailing-spaces: "error"
 
     # Enforce reasonable line lengths and short comments.
-    # Note that trailing comments are treated as code.
+    # Note that trailing comments can go to 120.
     max-len: ["error", { "code": 120, "comments": 80, "ignoreUrls": true }]
 
     # Newline at end of file.
