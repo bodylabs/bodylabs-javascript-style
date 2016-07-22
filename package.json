@@ -13,7 +13,7 @@
     "eslint": ">=2.13.0"
   },
   "dependencies": {
-    "eslint-plugin-mocha": "git+https://github.com/bodylabs/eslint-plugin-mocha.git#b81be5be171485a61998146ebf151f5140a412fb",
+    "eslint-plugin-mocha": "^4.1.0",
     "js-yaml": ">=3"
   }
 }

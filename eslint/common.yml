@@ -167,4 +167,4 @@ rules:
     # Mocha.
     "mocha/handle-done-callback": "error"
     "mocha/no-global-tests": "error"
-    "mocha/no-mocha-global-arrows": "error"
+    "mocha/no-mocha-arrows": "error"
