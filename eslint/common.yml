@@ -147,9 +147,20 @@ rules:
     require-yield: "error"
     no-useless-constructor: "error"
     no-useless-rename: "error"
+    no-const-assign: "error"
+
+    # No parens single-arg arrow functions:
+    # a => a; // instead of (a) => a
+    # Other cases are still good:
+    # () => {};
+    # (a, b, c) => a;
+    arrow-parens: ["error", "as-needed"]
 
     # ES6 arrow functions.
     arrow-spacing: "error"
+
+    # Don't write `a => 1 ? 2 : 3` (could be confused with `a <= 1 ? 2 : 3;`)
+    no-confusing-arrow: "error"
 
     # Disable a couple of the recommended checks:
 

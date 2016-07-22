@@ -3,13 +3,3 @@ extends:
 
 rules:
     no-var: "error"
-    no-const-assign: "error"
-
-    # No parens single-arg arrow functions:
-    # a => a; // instead of (a) => a
-    # Other cases are still good:
-    # () => {};
-    # (a, b, c) => a;
-    arrow-parens: ["error", "as-needed"]
-    # Don't write `a => 1 ? 2 : 3` (could be confused with `a <= 1 ? 2 : 3;`)
-    no-confusing-arrow: "error"
