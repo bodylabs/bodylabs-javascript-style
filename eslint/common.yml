@@ -157,7 +157,7 @@ rules:
     arrow-parens: ["error", "as-needed"]
 
     # No usless return keyword for one-line arrow functions
-    # Write i => i + 1 instead of i => { return i + 1 }, and for objects too,
+    # Write i => i + 1 instead of i => { return i + 1; }, and for objects too,
     # write i => ({ foo: i }) instead of i => { return { foo: i }; }
     arrow-body-style: ["error", "as-needed"]
 
